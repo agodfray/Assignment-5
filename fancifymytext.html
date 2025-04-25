@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Fancify My Text</title>
+        <!-- Link to your JS file -->
+        <!-- <script src="fancifymytext.js"></script> -->
+        <!-- We'll add the script tag at the end of the body for best practice -->
+
+        <!-- Basic CSS for visibility, optional -->
+        <style>
+            fieldset {
+                border: 1px solid black;
+                margin-bottom: 10px;
+            }
+            textarea {
+                vertical-align: top; /* Align textarea nicely if needed */
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1>Fancify My Text</h1>
+
+        <fieldset>
+            <legend>Text</legend>
+            <textarea id="textInput" rows="4" cols="30"></textarea>
+        </fieldset>
+
+        <fieldset>
+            <legend>Fancify</legend>
+            <button id="biggerBtn" onclick="makeBigger()">Bigger!</button><br>
+
+            <input type="radio" id="fancyRadio" name="fancyStyle" onchange="applyStyleChange()">
+            <label for="fancyRadio">FancyShmancy</label><br>
+
+            <input type="radio" id="boringRadio" name="fancyStyle" onchange="applyStyleChange()">
+            <label for="boringRadio">BoringBetty</label><br>
+
+            <button id="mooBtn" onclick="mooifyText()">Moo</button>
+        </fieldset>
+
+        <!-- Link the JavaScript file at the end of the body -->
+        <script src="fancifymytext.js"></script>
+    </body>
+</html>
